@@ -1,0 +1,209 @@
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+}
+
+body {
+    background-color: lightgray;
+}
+
+
+ul {
+    background-color: tomato;
+}
+
+.lazerSpan {
+    background-color: orange;
+    position: absolute;
+    left: 0px;
+    height: 80px;
+    width: 5px;
+    animation: infinite mymove 10s;
+    animation-direction: alternate;
+}
+
+@keyframes mymove {
+    from {left: 0px}
+    to {left: 100%}
+}
+
+ul a {
+    position: static;
+    display: inline-block;
+    background-color: cadetblue;
+    padding: 10px;
+    text-decoration: none;
+    margin: 20px;
+    color: white;
+    border: black 1px solid;
+}
+
+.deleteBtn {
+    position: static;
+    display: inline-block;
+    background-color: indianred;
+    padding: 10px;
+    text-decoration: none;
+    margin: 10px;
+    color: white;
+    border: black 1px solid;
+    cursor: pointer;
+}
+
+.deleteBtn:hover {
+    background-color: gainsboro;
+    color: red;
+}
+
+#mainForm {
+    position: absolute;
+    display: inline-block;
+    right: 0px;
+}
+
+.searchMsg {
+    font-size: 20px;
+    color: green;
+    margin: 15px 0px 0px 30px;
+}
+
+#statsBar {
+    display: inline-block;
+    padding: 31px;
+    background-color: purple;
+    height: 100%;
+    right: 0px;
+}
+
+@media (max-width: 620px)
+{
+    .lazerSpan {
+        height: 180px;
+    }
+}
+
+
+
+@media (max-width: 900px) {
+
+    #statsBar {
+        padding: 4px;
+    }
+
+    ul a {
+        margin-top: 30px;
+    }
+
+}
+
+@media (min-width: 900px)
+{
+
+#mainForm input {
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 20px;
+    height: 30px;
+    width: 100px;
+    font-size: 20px;
+}
+
+}
+
+
+@media (min-width: 1100px)
+{
+
+#mainForm input {
+    margin-right: 100px;
+    margin-left: 10px;
+    margin-top: 20px;
+    height: 30px;
+    width: 200px;
+    font-size: 20px;
+}
+
+}
+
+@media (min-width: 1400px)
+{
+
+#mainForm input {
+    margin-right: 200px;
+    margin-left: 10px;
+    margin-top: 20px;
+    height: 30px;
+    width: 400px;
+    font-size: 20px;
+}
+
+}
+
+#mainImgPrev {
+    margin: 15px;
+}
+
+.imgDiv {
+    display: inline-block;
+    margin: 15px;
+}
+
+.img {
+    border: darkgoldenrod 3px groove;
+}
+
+.img:hover {
+    opacity: 90%;
+}
+
+.imgDiv p {
+    display: block;
+    width: 200px;
+    background-color: lightsalmon;
+    padding: 20px;
+    border: firebrick solid 1px;
+}
+
+
+.signupForm, .loginForm {
+    position: fixed;
+    display: inline-block;
+
+    position: fixed;
+    flex-direction: column;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: aqua;
+    justify-content: flex-start;
+}
+
+.signupForm input, .loginForm input {
+    display: block;
+    margin-left: 250px;
+    margin-top: 40px;
+
+    margin-right: 200px;
+    margin-top: 20px;
+    height: 30px;
+    width: 400px;
+    font-size: 20px;
+}
+
+.signupForm button, .loginForm button {
+    margin-left: 395px;
+    margin-top: 40px;
+    height: 30px;
+    width: 100px;
+    font-size: 20px;
+}
+
+.signupForm p, .loginForm p {
+    display: block;
+    font-size: x-large;
+    margin-left: 410px;
+    margin-top: 40px;
+}
